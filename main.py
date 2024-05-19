@@ -243,7 +243,7 @@ def customer(username, password):
 
 
         st.subheader("Drug: " + drug_result[1][0])
-        img = Image.open('images/strepsils.JPG')
+        img = Image.open('images/strepsils.jpg')
         st.image(img, width=100 , caption="Rs. 10/-")
         strepsils = st.slider(label="Quantity",min_value=0, max_value=5, key= 2)
         st.info("When to USE: " + str(drug_result[1][2]))
